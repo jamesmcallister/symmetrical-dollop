@@ -1,0 +1,35 @@
+{
+  "env": {
+    "browser": true,
+    "mocha": true
+  },
+  "globals": {
+    "module": false,
+    "browser": true
+  },
+  "parser": "babel-eslint",
+  "parserOptions": {
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "jsx": true
+    }
+  },
+  "extends": ["react", "prettier"],
+  "plugins": ["react", "prettier"],
+  "rules": {
+    "no-undefined": "error",
+    "no-unused-vars": "warn",
+    "no-unused-expressions": "off",
+    "react/prop-types": 1,
+    "react/jsx-curly-spacing": 0,
+    "react/jsx-wrap-multilines": 0,
+    "prettier/prettier": [
+      "error",
+      {
+        "singleQuote": true,
+        "semi": false,
+        "jsxBracketSameLine": true
+      }
+    ]
+  }
+}
